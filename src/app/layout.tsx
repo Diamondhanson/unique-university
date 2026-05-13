@@ -8,7 +8,11 @@ export const metadata = {
     template: '%s | UBHI'
   },
   description:
-    'Unique Bilingual Higher Institute — a specialized higher institute training the next generation of healthcare professionals.'
+    'Unique Bilingual Higher Institute — a specialized higher institute training the next generation of healthcare professionals.',
+  icons: {
+    icon: '/favicon.ico',
+    apple: '/apple-touch-icon.png'
+  }
 }
 
 export default function RootLayout({ children }: { children: ReactNode }) {

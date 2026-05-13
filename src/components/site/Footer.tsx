@@ -48,14 +48,14 @@ export function Footer({ locale, dict }: FooterProps) {
     <footer className="border-t border-navy-100 bg-navy-900 text-navy-100">
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 lg:grid-cols-4 lg:px-8">
         <div className="lg:col-span-2">
-          <div className="flex items-center gap-2">
-            <span className="flex h-10 w-10 items-center justify-center rounded-md bg-gradient-to-br from-ubhi-green-500 to-ubhi-green-700 font-bold text-white">
-              U
-            </span>
-            <span className="font-serif text-xl font-semibold text-white">
-              {dict.common.institute}
-            </span>
-          </div>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/logo-small.png"
+            alt={dict.common.institute}
+            width={512}
+            height={169}
+            className="h-14 w-auto"
+          />
           <p className="mt-4 max-w-md text-sm leading-relaxed text-navy-200">
             {dict.footer.tagline}. {dict.about.intro.split('.')[0]}.
           </p>

@@ -40,15 +40,18 @@ export function Navbar({ locale, dict }: NavbarProps) {
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
         <Link
           href={`/${locale}`}
-          className="flex items-center gap-2 text-navy-700 dark:text-white"
+          aria-label={dict.common.institute}
+          className="flex items-center"
           onClick={() => setOpen(false)}
         >
-          <span className="flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-navy-500 to-navy-700 text-sm font-bold text-white shadow-sm">
-            U
-          </span>
-          <span className="hidden font-serif text-lg font-semibold sm:inline">
-            UBHI
-          </span>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/logo-small.png"
+            alt={dict.common.institute}
+            width={512}
+            height={169}
+            className="h-10 w-auto sm:h-12"
+          />
         </Link>
 
         <nav className="hidden items-center gap-1 lg:flex">
