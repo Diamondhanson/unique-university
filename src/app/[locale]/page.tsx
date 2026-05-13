@@ -53,16 +53,21 @@ export default async function HomePage({
             </span>
           </Reveal>
           <Reveal delay={0.05}>
-            <h1 className="mt-6 max-w-3xl font-serif text-5xl font-bold leading-tight sm:text-6xl lg:text-7xl">
+            <h1 className="mt-6 max-w-4xl font-serif text-5xl font-bold leading-[1.05] sm:text-6xl lg:text-7xl">
               {t.heroTitle}
             </h1>
           </Reveal>
-          <Reveal delay={0.12}>
-            <p className="mt-6 max-w-2xl text-lg leading-relaxed text-navy-100">
+          <Reveal delay={0.1}>
+            <p className="mt-5 max-w-3xl font-serif text-2xl font-medium leading-snug text-ubhi-green-300 sm:text-3xl lg:text-4xl">
+              {t.heroTagline}
+            </p>
+          </Reveal>
+          <Reveal delay={0.16}>
+            <p className="mt-6 max-w-2xl text-base leading-relaxed text-navy-100 sm:text-lg">
               {t.heroSubtitle}
             </p>
           </Reveal>
-          <Reveal delay={0.18}>
+          <Reveal delay={0.22}>
             <div className="mt-10 flex flex-wrap items-center gap-4">
               <Link
                 href={`/${locale}/admissions`}
