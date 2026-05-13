@@ -21,6 +21,10 @@ export const programOrder: ProgramKey[] = [
   'computing'
 ]
 
+export function isProgramKey(value: string): value is ProgramKey {
+  return (programOrder as readonly string[]).includes(value)
+}
+
 export const programImages: Record<ProgramKey, string> = {
   nursing:
     'https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=900&q=80',
@@ -41,14 +45,40 @@ export const programImages: Record<ProgramKey, string> = {
     'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=80'
 }
 
-export const tuitionRows: { key: ProgramKey; tuition: string; reg: string; total: string }[] = [
-  { key: 'nursing', tuition: 'XAF 650,000', reg: 'XAF 75,000', total: 'XAF 725,000' },
-  { key: 'midwifery', tuition: 'XAF 650,000', reg: 'XAF 75,000', total: 'XAF 725,000' },
-  { key: 'physiotherapy', tuition: 'XAF 600,000', reg: 'XAF 75,000', total: 'XAF 675,000' },
-  { key: 'imaging', tuition: 'XAF 700,000', reg: 'XAF 75,000', total: 'XAF 775,000' },
-  { key: 'pharmacy', tuition: 'XAF 650,000', reg: 'XAF 75,000', total: 'XAF 725,000' },
-  { key: 'lab', tuition: 'XAF 700,000', reg: 'XAF 75,000', total: 'XAF 775,000' },
-  { key: 'dental', tuition: 'XAF 650,000', reg: 'XAF 75,000', total: 'XAF 725,000' },
-  { key: 'management', tuition: 'XAF 550,000', reg: 'XAF 75,000', total: 'XAF 625,000' },
-  { key: 'computing', tuition: 'XAF 600,000', reg: 'XAF 75,000', total: 'XAF 675,000' }
-]
+export type ProgramFees = {
+  tuition: number
+  registration: number
+}
+
+export const programFees: Record<ProgramKey, ProgramFees> = {
+  nursing: { tuition: 650_000, registration: 75_000 },
+  midwifery: { tuition: 650_000, registration: 75_000 },
+  physiotherapy: { tuition: 600_000, registration: 75_000 },
+  imaging: { tuition: 700_000, registration: 75_000 },
+  pharmacy: { tuition: 650_000, registration: 75_000 },
+  lab: { tuition: 700_000, registration: 75_000 },
+  dental: { tuition: 650_000, registration: 75_000 },
+  management: { tuition: 550_000, registration: 75_000 },
+  computing: { tuition: 600_000, registration: 75_000 }
+}
+
+export function formatXAF(amount: number): string {
+  return `XAF ${amount.toLocaleString('en-US')}`
+}
+
+export type FormattedFeeRow = {
+  key: ProgramKey
+  tuition: string
+  reg: string
+  total: string
+}
+
+export const tuitionRows: FormattedFeeRow[] = programOrder.map((key) => {
+  const f = programFees[key]
+  return {
+    key,
+    tuition: formatXAF(f.tuition),
+    reg: formatXAF(f.registration),
+    total: formatXAF(f.tuition + f.registration)
+  }
+})

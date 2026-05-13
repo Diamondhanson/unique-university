@@ -71,10 +71,11 @@ export default async function ProgramsPage({
                       {p.desc}
                     </p>
                     <Link
-                      href={`/${locale}/admissions`}
+                      href={`/${locale}/programs/${key}`}
+                      aria-label={`${t.labels.readMore}: ${p.name}`}
                       className="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-ubhi-green-600 transition hover:text-ubhi-green-700"
                     >
-                      {dict.common.applyNow} <ArrowRight size={14} />
+                      {t.labels.readMore} <ArrowRight size={14} />
                     </Link>
                   </div>
                 </StaggerItem>

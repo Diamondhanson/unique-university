@@ -79,16 +79,253 @@
     "eyebrow": "Departments",
     "subtitle": "Career-focused programs across the health sciences and beyond, designed in partnership with healthcare employers.",
     "durationLabel": "Duration",
+    "labels": {
+      "readMore": "Read more",
+      "programDetails": "Program details",
+      "overviewTitle": "Program overview",
+      "curriculumTitle": "What you'll study",
+      "careerTitle": "Career outlook",
+      "feesTitle": "Tuition & fees",
+      "annualTuition": "Annual tuition",
+      "registrationFee": "Registration fee",
+      "firstYearTotal": "First-year total",
+      "feesNote": "Fees are payable in installments. Merit scholarships are available for qualifying applicants.",
+      "documentsTitle": "Documents required to apply",
+      "applyNow": "Apply for this program",
+      "applyCtaBody": "Ready to take the next step? Submit your application and join the next cohort of UBHI healthcare professionals.",
+      "backToPrograms": "All programs",
+      "relatedTitle": "Other programs to explore",
+      "heroDurationLabel": "Duration",
+      "heroIntakeLabel": "Intake",
+      "heroIntakeValue": "September & February"
+    },
+    "documents": [
+      "GCE Advanced Level certificate (or recognized equivalent)",
+      "Official academic transcripts from previous schools",
+      "Certified copy of birth certificate",
+      "Valid national ID card or passport",
+      "Four recent passport-sized photographs",
+      "Completed UBHI application form",
+      "Receipt of application and registration fee payment"
+    ],
     "items": {
-      "nursing": { "name": "Nursing & Health Sciences", "desc": "Train as a registered nurse with comprehensive clinical and academic preparation across patient care, public health, and emergency response.", "duration": "3 years" },
-      "midwifery": { "name": "Midwifery", "desc": "Specialized preparation in maternal and newborn care, antenatal and postnatal support, and safe delivery practice.", "duration": "3 years" },
-      "physiotherapy": { "name": "Physiotherapy", "desc": "Movement, rehabilitation, and recovery — restore function and quality of life across age groups and conditions.", "duration": "3 years" },
-      "imaging": { "name": "Medical Imaging Technology", "desc": "Operate diagnostic imaging equipment and interpret results that drive clinical decisions.", "duration": "3 years" },
-      "pharmacy": { "name": "Pharmacy Technology", "desc": "Support safe medication management, dispensing, and pharmacy operations in clinical and community settings.", "duration": "3 years" },
-      "lab": { "name": "Medical Laboratory Sciences", "desc": "Run the tests that diagnose disease — biochemistry, microbiology, hematology, and beyond.", "duration": "3 years" },
-      "dental": { "name": "Dental Therapy", "desc": "Preventive and restorative oral healthcare delivery in clinical and community contexts.", "duration": "3 years" },
-      "management": { "name": "Health Care Management", "desc": "Lead and operate healthcare organizations — administration, policy, and quality improvement.", "duration": "3 years" },
-      "computing": { "name": "Computer Engineering", "desc": "Build the digital systems modern healthcare depends on, from records to telemedicine.", "duration": "3 years" }
+      "nursing": {
+        "name": "Nursing & Health Sciences",
+        "desc": "Train as a registered nurse with comprehensive clinical and academic preparation across patient care, public health, and emergency response.",
+        "duration": "3 years",
+        "tagline": "Train as a compassionate, clinically-skilled registered nurse.",
+        "overview": "The Nursing & Health Sciences program prepares you for a career caring for patients across hospitals, clinics, and community settings. Through a balance of classroom theory, simulation labs, and supervised clinical placements, you develop the technical competencies and clinical judgement needed to deliver safe, evidence-based care from day one.",
+        "curriculum": [
+          "Anatomy & Physiology",
+          "Pharmacology & Medication Management",
+          "Adult & Pediatric Nursing",
+          "Maternal & Reproductive Health",
+          "Mental Health Nursing",
+          "Critical & Emergency Care",
+          "Community & Public Health",
+          "Clinical Placements (Years 2 & 3)"
+        ],
+        "career": [
+          "Registered nurse — hospital wards",
+          "Community & public health nurse",
+          "Operating room / surgical nurse",
+          "Pediatric nurse",
+          "ICU / critical care nurse",
+          "Occupational health nurse"
+        ]
+      },
+      "midwifery": {
+        "name": "Midwifery",
+        "desc": "Specialized preparation in maternal and newborn care, antenatal and postnatal support, and safe delivery practice.",
+        "duration": "3 years",
+        "tagline": "Specialized in maternal, newborn, and reproductive health.",
+        "overview": "The Midwifery program trains professionals to support women through pregnancy, childbirth, and the postnatal period. You learn evidence-based practice in antenatal monitoring, safe delivery, neonatal care, and reproductive health counselling — preparing you to serve in both clinical and community contexts.",
+        "curriculum": [
+          "Reproductive Anatomy & Physiology",
+          "Antenatal Care",
+          "Labor & Delivery Management",
+          "Neonatal Resuscitation",
+          "Postpartum & Lactation Support",
+          "Family Planning & Counselling",
+          "Obstetric Emergencies",
+          "Clinical Placements (Maternity Units)"
+        ],
+        "career": [
+          "Hospital midwife",
+          "Community midwife",
+          "Maternity ward nurse",
+          "Antenatal clinic specialist",
+          "Reproductive health educator"
+        ]
+      },
+      "physiotherapy": {
+        "name": "Physiotherapy",
+        "desc": "Movement, rehabilitation, and recovery — restore function and quality of life across age groups and conditions.",
+        "duration": "3 years",
+        "tagline": "Movement, recovery, and rehabilitation across the lifespan.",
+        "overview": "Physiotherapy at UBHI trains you to assess, treat, and rehabilitate patients with movement and musculoskeletal challenges. Through anatomy-grounded coursework, hands-on technique labs, and supervised practice in clinics, you graduate ready to restore function, manage pain, and improve quality of life.",
+        "curriculum": [
+          "Musculoskeletal Anatomy",
+          "Kinesiology & Biomechanics",
+          "Manual Therapy Techniques",
+          "Cardiopulmonary Rehabilitation",
+          "Pediatric & Geriatric Physiotherapy",
+          "Orthopedic & Sports Therapy",
+          "Neurological Rehabilitation",
+          "Clinical Placements"
+        ],
+        "career": [
+          "Hospital physiotherapist",
+          "Sports & rehabilitation clinic therapist",
+          "Pediatric physiotherapist",
+          "Home-care physiotherapist",
+          "Geriatric rehabilitation specialist"
+        ]
+      },
+      "imaging": {
+        "name": "Medical Imaging Technology",
+        "desc": "Operate diagnostic imaging equipment and interpret results that drive clinical decisions.",
+        "duration": "3 years",
+        "tagline": "Operate the diagnostic imaging modern medicine relies on.",
+        "overview": "Medical Imaging Technology prepares you to operate the X-ray, ultrasound, CT, and MRI equipment modern medicine depends on. You learn the physics, anatomy, patient positioning, radiation safety, and image quality skills needed to support accurate diagnoses every day.",
+        "curriculum": [
+          "Radiographic Physics",
+          "Cross-sectional Anatomy",
+          "X-ray & Fluoroscopy Techniques",
+          "Ultrasound Imaging",
+          "CT & MRI Fundamentals",
+          "Radiation Protection & Safety",
+          "Image Quality & Interpretation",
+          "Clinical Placements (Radiology)"
+        ],
+        "career": [
+          "Hospital radiographer",
+          "Ultrasound technologist",
+          "CT / MRI technologist",
+          "Imaging quality officer",
+          "Mobile / community imaging technician"
+        ]
+      },
+      "pharmacy": {
+        "name": "Pharmacy Technology",
+        "desc": "Support safe medication management, dispensing, and pharmacy operations in clinical and community settings.",
+        "duration": "3 years",
+        "tagline": "Safe medication management in clinical and community pharmacy.",
+        "overview": "The Pharmacy Technology program equips you to support pharmacists in dispensing, compounding, inventory management, and patient counselling. Coursework grounded in pharmacology, plus structured pharmacy placements, builds the precision and ethics required for safe medication practice.",
+        "curriculum": [
+          "Pharmaceutical Calculations",
+          "Pharmacology",
+          "Drug Interactions & Safety",
+          "Dispensing Practice",
+          "Pharmacy Operations & Inventory",
+          "Compounding Techniques",
+          "Patient Counselling Skills",
+          "Clinical Placements (Pharmacy)"
+        ],
+        "career": [
+          "Hospital pharmacy technician",
+          "Community pharmacy technician",
+          "Inventory & supply technician",
+          "Pharmaceutical company representative",
+          "Wholesale pharmacy operations"
+        ]
+      },
+      "lab": {
+        "name": "Medical Laboratory Sciences",
+        "desc": "Run the tests that diagnose disease — biochemistry, microbiology, hematology, and beyond.",
+        "duration": "3 years",
+        "tagline": "Run the diagnostic tests that find disease.",
+        "overview": "Medical Laboratory Sciences prepares you to perform and interpret the lab tests that drive clinical decisions. Through biochemistry, microbiology, hematology, parasitology, and immunology coursework — paired with hands-on lab and hospital placements — you become an essential member of the diagnostic team.",
+        "curriculum": [
+          "Clinical Biochemistry",
+          "Hematology",
+          "Medical Microbiology",
+          "Parasitology",
+          "Immunology & Serology",
+          "Histopathology",
+          "Laboratory Quality Management",
+          "Clinical Placements (Lab)"
+        ],
+        "career": [
+          "Hospital laboratory technician",
+          "Research lab technologist",
+          "Public health lab officer",
+          "Blood bank technologist",
+          "Quality control officer"
+        ]
+      },
+      "dental": {
+        "name": "Dental Therapy",
+        "desc": "Preventive and restorative oral healthcare delivery in clinical and community contexts.",
+        "duration": "3 years",
+        "tagline": "Preventive and restorative oral healthcare for all ages.",
+        "overview": "Dental Therapy trains you to deliver routine and preventive oral healthcare — examinations, cleanings, basic restorations, and patient education. You combine pre-clinical lab work with supervised practice in dental clinics, learning to care for patients across all age groups.",
+        "curriculum": [
+          "Dental Anatomy & Histology",
+          "Oral Pathology",
+          "Preventive Dentistry",
+          "Pediatric Oral Health",
+          "Periodontology Basics",
+          "Restorative Procedures",
+          "Dental Public Health",
+          "Clinical Placements (Dental)"
+        ],
+        "career": [
+          "Dental therapist (clinic)",
+          "School & community oral health worker",
+          "Dental hygiene specialist",
+          "Dental assistant / chairside",
+          "Dental health educator"
+        ]
+      },
+      "management": {
+        "name": "Health Care Management",
+        "desc": "Lead and operate healthcare organizations — administration, policy, and quality improvement.",
+        "duration": "3 years",
+        "tagline": "Lead and operate healthcare organizations and services.",
+        "overview": "Health Care Management prepares you to run the operational side of healthcare — staffing, finance, quality, compliance, and patient experience. You combine business fundamentals with healthcare-specific coursework and applied projects to graduate ready to lead in hospitals, NGOs, and ministries.",
+        "curriculum": [
+          "Healthcare Systems & Policy",
+          "Hospital Administration",
+          "Healthcare Finance & Budgeting",
+          "Quality Improvement & Audit",
+          "Human Resources in Health",
+          "Health Information Systems",
+          "Ethics & Compliance",
+          "Capstone Project"
+        ],
+        "career": [
+          "Hospital administrator",
+          "Clinic operations manager",
+          "Health programme coordinator",
+          "Quality & compliance officer",
+          "Health insurance liaison"
+        ]
+      },
+      "computing": {
+        "name": "Computer Engineering",
+        "desc": "Build the digital systems modern healthcare depends on, from records to telemedicine.",
+        "duration": "3 years",
+        "tagline": "Build the digital systems modern healthcare depends on.",
+        "overview": "Computer Engineering at UBHI focuses on the systems healthcare runs on — electronic medical records, telemedicine, hospital networks, and clinical data. You build software engineering and systems fundamentals while learning the unique constraints of healthcare technology: privacy, reliability, and human-centered design.",
+        "curriculum": [
+          "Programming Fundamentals",
+          "Databases & SQL",
+          "Web & Mobile Development",
+          "Networking & Systems Administration",
+          "Cybersecurity Basics",
+          "Health Information Systems",
+          "Cloud Services",
+          "Capstone Project"
+        ],
+        "career": [
+          "EMR / hospital systems developer",
+          "Health-tech software engineer",
+          "Telemedicine platform developer",
+          "IT systems administrator (healthcare)",
+          "Health data analyst"
+        ]
+      }
     }
   },
   "admissions": {

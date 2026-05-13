@@ -79,16 +79,253 @@
     "eyebrow": "Départements",
     "subtitle": "Des programmes axés sur la carrière en sciences de la santé et au-delà, conçus en partenariat avec les employeurs du secteur.",
     "durationLabel": "Durée",
+    "labels": {
+      "readMore": "En savoir plus",
+      "programDetails": "Détails du programme",
+      "overviewTitle": "Présentation du programme",
+      "curriculumTitle": "Ce que vous étudierez",
+      "careerTitle": "Débouchés professionnels",
+      "feesTitle": "Frais de scolarité",
+      "annualTuition": "Frais annuels",
+      "registrationFee": "Frais d'inscription",
+      "firstYearTotal": "Total première année",
+      "feesNote": "Les frais sont payables en plusieurs versements. Des bourses au mérite sont disponibles pour les candidats éligibles.",
+      "documentsTitle": "Documents requis pour postuler",
+      "applyNow": "Postuler à ce programme",
+      "applyCtaBody": "Prêt(e) à passer à l'étape suivante ? Soumettez votre candidature et rejoignez la prochaine promotion de professionnels de la santé UBHI.",
+      "backToPrograms": "Tous les programmes",
+      "relatedTitle": "Autres programmes à découvrir",
+      "heroDurationLabel": "Durée",
+      "heroIntakeLabel": "Rentrée",
+      "heroIntakeValue": "Septembre et février"
+    },
+    "documents": [
+      "Certificat du GCE Advanced Level (ou équivalent reconnu)",
+      "Relevés de notes officiels des établissements précédents",
+      "Copie certifiée de l'acte de naissance",
+      "Carte nationale d'identité ou passeport en cours de validité",
+      "Quatre photos d'identité récentes",
+      "Formulaire de candidature UBHI dûment rempli",
+      "Reçu de paiement des frais de candidature et d'inscription"
+    ],
     "items": {
-      "nursing": { "name": "Soins infirmiers et sciences de la santé", "desc": "Devenez infirmier(ère) diplômé(e) avec une préparation clinique et académique complète — soins, santé publique, urgences.", "duration": "3 ans" },
-      "midwifery": { "name": "Sage-femme / Maïeutique", "desc": "Préparation spécialisée aux soins maternels et néonatals, suivi pré et postnatal, et pratique sécurisée de l'accouchement.", "duration": "3 ans" },
-      "physiotherapy": { "name": "Physiothérapie", "desc": "Mouvement, rééducation et récupération — restaurer la fonction et la qualité de vie à tous les âges.", "duration": "3 ans" },
-      "imaging": { "name": "Imagerie médicale", "desc": "Utiliser les équipements d'imagerie diagnostique et interpréter les résultats qui orientent les décisions cliniques.", "duration": "3 ans" },
-      "pharmacy": { "name": "Technologie pharmaceutique", "desc": "Soutenir la gestion sécurisée des médicaments, la dispensation et les opérations pharmaceutiques.", "duration": "3 ans" },
-      "lab": { "name": "Sciences de laboratoire médical", "desc": "Réalisez les analyses qui diagnostiquent la maladie — biochimie, microbiologie, hématologie, et plus encore.", "duration": "3 ans" },
-      "dental": { "name": "Soins dentaires", "desc": "Soins bucco-dentaires préventifs et restaurateurs en contextes cliniques et communautaires.", "duration": "3 ans" },
-      "management": { "name": "Gestion des soins de santé", "desc": "Diriger et exploiter des organisations de santé — administration, politique et amélioration de la qualité.", "duration": "3 ans" },
-      "computing": { "name": "Génie informatique", "desc": "Construire les systèmes numériques dont dépend la santé moderne, des dossiers à la télémédecine.", "duration": "3 ans" }
+      "nursing": {
+        "name": "Soins infirmiers et sciences de la santé",
+        "desc": "Devenez infirmier(ère) diplômé(e) avec une préparation clinique et académique complète — soins, santé publique, urgences.",
+        "duration": "3 ans",
+        "tagline": "Formez-vous comme infirmier(ère) diplômé(e), compétent(e) et bienveillant(e).",
+        "overview": "Le programme de soins infirmiers et sciences de la santé vous prépare à une carrière au service des patients en hôpital, clinique et communauté. Grâce à un équilibre entre théorie, laboratoires de simulation et stages cliniques supervisés, vous développez les compétences techniques et le jugement clinique nécessaires pour prodiguer des soins sûrs et fondés sur des preuves dès le premier jour.",
+        "curriculum": [
+          "Anatomie et physiologie",
+          "Pharmacologie et gestion des médicaments",
+          "Soins infirmiers adultes et pédiatriques",
+          "Santé maternelle et reproductive",
+          "Soins infirmiers en santé mentale",
+          "Soins critiques et d'urgence",
+          "Santé communautaire et publique",
+          "Stages cliniques (2e et 3e années)"
+        ],
+        "career": [
+          "Infirmier(ère) diplômé(e) — services hospitaliers",
+          "Infirmier(ère) en santé communautaire et publique",
+          "Infirmier(ère) de bloc opératoire",
+          "Infirmier(ère) pédiatrique",
+          "Infirmier(ère) en soins intensifs",
+          "Infirmier(ère) en santé au travail"
+        ]
+      },
+      "midwifery": {
+        "name": "Sage-femme / Maïeutique",
+        "desc": "Préparation spécialisée aux soins maternels et néonatals, suivi pré et postnatal, et pratique sécurisée de l'accouchement.",
+        "duration": "3 ans",
+        "tagline": "Spécialisé(e) en santé maternelle, néonatale et reproductive.",
+        "overview": "Le programme de maïeutique forme des professionnels capables d'accompagner les femmes pendant la grossesse, l'accouchement et la période postnatale. Vous apprenez la pratique fondée sur des preuves en suivi prénatal, accouchement sécurisé, soins néonatals et conseil en santé reproductive — prêt(e) à servir en milieu clinique comme en communauté.",
+        "curriculum": [
+          "Anatomie et physiologie de la reproduction",
+          "Suivi prénatal",
+          "Gestion du travail et de l'accouchement",
+          "Réanimation néonatale",
+          "Soins postpartum et allaitement",
+          "Planification familiale et counselling",
+          "Urgences obstétricales",
+          "Stages cliniques (services de maternité)"
+        ],
+        "career": [
+          "Sage-femme hospitalière",
+          "Sage-femme communautaire",
+          "Infirmier(ère) en maternité",
+          "Spécialiste en clinique prénatale",
+          "Éducateur(trice) en santé reproductive"
+        ]
+      },
+      "physiotherapy": {
+        "name": "Physiothérapie",
+        "desc": "Mouvement, rééducation et récupération — restaurer la fonction et la qualité de vie à tous les âges.",
+        "duration": "3 ans",
+        "tagline": "Mouvement, récupération et rééducation tout au long de la vie.",
+        "overview": "La physiothérapie à UBHI vous forme à évaluer, traiter et rééduquer les patients présentant des troubles du mouvement et musculo-squelettiques. Grâce à des cours axés sur l'anatomie, des laboratoires pratiques de techniques et une pratique supervisée en clinique, vous obtenez votre diplôme prêt(e) à restaurer la fonction, gérer la douleur et améliorer la qualité de vie.",
+        "curriculum": [
+          "Anatomie musculo-squelettique",
+          "Kinésiologie et biomécanique",
+          "Techniques de thérapie manuelle",
+          "Rééducation cardio-pulmonaire",
+          "Physiothérapie pédiatrique et gériatrique",
+          "Thérapie orthopédique et sportive",
+          "Rééducation neurologique",
+          "Stages cliniques"
+        ],
+        "career": [
+          "Physiothérapeute hospitalier(ère)",
+          "Thérapeute en clinique de sport et rééducation",
+          "Physiothérapeute pédiatrique",
+          "Physiothérapeute à domicile",
+          "Spécialiste en rééducation gériatrique"
+        ]
+      },
+      "imaging": {
+        "name": "Imagerie médicale",
+        "desc": "Utiliser les équipements d'imagerie diagnostique et interpréter les résultats qui orientent les décisions cliniques.",
+        "duration": "3 ans",
+        "tagline": "Exploiter l'imagerie diagnostique dont dépend la médecine moderne.",
+        "overview": "La technologie d'imagerie médicale vous prépare à utiliser les équipements de radiographie, échographie, scanner et IRM dont dépend la médecine moderne. Vous apprenez la physique, l'anatomie, le positionnement du patient, la radioprotection et la qualité d'image nécessaires pour soutenir des diagnostics précis chaque jour.",
+        "curriculum": [
+          "Physique radiographique",
+          "Anatomie en coupe",
+          "Techniques de radiographie et fluoroscopie",
+          "Imagerie par ultrasons",
+          "Bases du scanner et de l'IRM",
+          "Radioprotection et sécurité",
+          "Qualité et interprétation d'images",
+          "Stages cliniques (radiologie)"
+        ],
+        "career": [
+          "Radiographe hospitalier(ère)",
+          "Technologue en échographie",
+          "Technologue scanner / IRM",
+          "Responsable qualité en imagerie",
+          "Technicien(ne) d'imagerie mobile / communautaire"
+        ]
+      },
+      "pharmacy": {
+        "name": "Technologie pharmaceutique",
+        "desc": "Soutenir la gestion sécurisée des médicaments, la dispensation et les opérations pharmaceutiques.",
+        "duration": "3 ans",
+        "tagline": "Gestion sécurisée des médicaments en pharmacie clinique et communautaire.",
+        "overview": "Le programme de technologie pharmaceutique vous équipe pour assister les pharmaciens dans la dispensation, la préparation, la gestion des stocks et le conseil aux patients. Des cours fondés sur la pharmacologie et des stages structurés en pharmacie développent la précision et l'éthique requises pour une pratique sécurisée des médicaments.",
+        "curriculum": [
+          "Calculs pharmaceutiques",
+          "Pharmacologie",
+          "Interactions médicamenteuses et sécurité",
+          "Pratique de la dispensation",
+          "Opérations et inventaire de pharmacie",
+          "Techniques de préparation",
+          "Counselling au patient",
+          "Stages cliniques (pharmacie)"
+        ],
+        "career": [
+          "Technicien(ne) en pharmacie hospitalière",
+          "Technicien(ne) en pharmacie communautaire",
+          "Technicien(ne) en inventaire et approvisionnement",
+          "Représentant(e) en industrie pharmaceutique",
+          "Opérations en pharmacie de gros"
+        ]
+      },
+      "lab": {
+        "name": "Sciences de laboratoire médical",
+        "desc": "Réalisez les analyses qui diagnostiquent la maladie — biochimie, microbiologie, hématologie, et plus encore.",
+        "duration": "3 ans",
+        "tagline": "Réaliser les analyses qui révèlent la maladie.",
+        "overview": "Les sciences de laboratoire médical vous préparent à effectuer et interpréter les analyses qui orientent les décisions cliniques. À travers des cours de biochimie, microbiologie, hématologie, parasitologie et immunologie — combinés à des stages en laboratoire et en hôpital — vous devenez un membre essentiel de l'équipe de diagnostic.",
+        "curriculum": [
+          "Biochimie clinique",
+          "Hématologie",
+          "Microbiologie médicale",
+          "Parasitologie",
+          "Immunologie et sérologie",
+          "Histopathologie",
+          "Gestion qualité du laboratoire",
+          "Stages cliniques (laboratoire)"
+        ],
+        "career": [
+          "Technicien(ne) de laboratoire hospitalier",
+          "Technologue en laboratoire de recherche",
+          "Agent de laboratoire de santé publique",
+          "Technologue en banque de sang",
+          "Responsable contrôle qualité"
+        ]
+      },
+      "dental": {
+        "name": "Soins dentaires",
+        "desc": "Soins bucco-dentaires préventifs et restaurateurs en contextes cliniques et communautaires.",
+        "duration": "3 ans",
+        "tagline": "Soins bucco-dentaires préventifs et restaurateurs à tout âge.",
+        "overview": "La thérapie dentaire vous forme à délivrer les soins bucco-dentaires de routine et préventifs — examens, détartrages, restaurations de base et éducation des patients. Vous combinez le travail pré-clinique en laboratoire avec une pratique supervisée en cliniques dentaires, en apprenant à soigner des patients de tous âges.",
+        "curriculum": [
+          "Anatomie et histologie dentaires",
+          "Pathologie buccale",
+          "Dentisterie préventive",
+          "Santé bucco-dentaire pédiatrique",
+          "Bases de la parodontologie",
+          "Procédures restauratrices",
+          "Santé publique dentaire",
+          "Stages cliniques (dentaires)"
+        ],
+        "career": [
+          "Thérapeute dentaire (clinique)",
+          "Agent en santé bucco-dentaire scolaire et communautaire",
+          "Spécialiste en hygiène dentaire",
+          "Assistant(e) dentaire / au fauteuil",
+          "Éducateur(trice) en santé dentaire"
+        ]
+      },
+      "management": {
+        "name": "Gestion des soins de santé",
+        "desc": "Diriger et exploiter des organisations de santé — administration, politique et amélioration de la qualité.",
+        "duration": "3 ans",
+        "tagline": "Diriger et exploiter les organisations et services de santé.",
+        "overview": "La gestion des soins de santé vous prépare à diriger le volet opérationnel de la santé — personnel, finance, qualité, conformité et expérience patient. Vous combinez les fondamentaux de la gestion avec des cours spécifiques à la santé et des projets appliqués, pour être prêt(e) à diriger en hôpital, ONG et ministère.",
+        "curriculum": [
+          "Systèmes et politiques de santé",
+          "Administration hospitalière",
+          "Finance et budgétisation en santé",
+          "Amélioration de la qualité et audit",
+          "Ressources humaines en santé",
+          "Systèmes d'information de santé",
+          "Éthique et conformité",
+          "Projet de fin d'études"
+        ],
+        "career": [
+          "Administrateur(trice) hospitalier(ère)",
+          "Responsable opérations clinique",
+          "Coordinateur(trice) de programme de santé",
+          "Responsable qualité et conformité",
+          "Liaison assurance maladie"
+        ]
+      },
+      "computing": {
+        "name": "Génie informatique",
+        "desc": "Construire les systèmes numériques dont dépend la santé moderne, des dossiers à la télémédecine.",
+        "duration": "3 ans",
+        "tagline": "Construire les systèmes numériques dont dépend la santé moderne.",
+        "overview": "Le génie informatique à UBHI se concentre sur les systèmes que la santé utilise — dossiers médicaux électroniques, télémédecine, réseaux hospitaliers et données cliniques. Vous construisez des bases en génie logiciel et systèmes tout en apprenant les contraintes propres aux technologies de santé : confidentialité, fiabilité et conception centrée sur l'humain.",
+        "curriculum": [
+          "Bases de la programmation",
+          "Bases de données et SQL",
+          "Développement web et mobile",
+          "Réseaux et administration système",
+          "Bases de la cybersécurité",
+          "Systèmes d'information de santé",
+          "Services cloud",
+          "Projet de fin d'études"
+        ],
+        "career": [
+          "Développeur(euse) de systèmes hospitaliers / DME",
+          "Ingénieur(e) logiciel en santé numérique",
+          "Développeur(euse) de plateformes de télémédecine",
+          "Administrateur(trice) systèmes IT (santé)",
+          "Analyste de données de santé"
+        ]
+      }
     }
   },
   "admissions": {
