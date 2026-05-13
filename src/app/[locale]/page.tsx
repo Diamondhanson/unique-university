@@ -2,6 +2,7 @@ import { ArrowRight, BookOpen, GraduationCap, HeartPulse, Languages, Sparkles } 
 import Image from 'next/image'
 import Link from 'next/link'
 
+import { HeroCarousel } from '@/components/site/HeroCarousel'
 import { Reveal, StaggerGroup, StaggerItem } from '@/components/site/Reveal'
 import { isLocale, type Locale } from '@/i18n/config'
 import { getDictionary } from '@/i18n/getDictionary'
@@ -35,17 +36,7 @@ export default async function HomePage({
   return (
     <>
       <section className="relative isolate overflow-hidden bg-navy-900 text-white">
-        <div className="absolute inset-0 -z-10">
-          <Image
-            src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1900&q=80"
-            alt=""
-            fill
-            priority
-            sizes="100vw"
-            className="object-cover opacity-40"
-          />
-          <div className="absolute inset-0 bg-gradient-to-br from-navy-900/85 via-navy-900/70 to-navy-700/60" />
-        </div>
+        <HeroCarousel />
         <div className="mx-auto max-w-7xl px-4 py-24 sm:px-6 sm:py-32 lg:px-8 lg:py-40">
           <Reveal>
             <span className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-3 py-1 text-xs uppercase tracking-[0.18em] text-gold-400">
