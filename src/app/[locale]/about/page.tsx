@@ -43,7 +43,7 @@ export default async function AboutPage({
         <div className="mx-auto grid max-w-7xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
           <Reveal className="relative aspect-[4/5] w-full overflow-hidden rounded-3xl shadow-xl">
             <Image
-              src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1100&q=80"
+              src="https://images.unsplash.com/photo-1606761568499-6d2451b23c66?auto=format&fit=crop&w=1100&q=80"
               alt={t.title}
               fill
               sizes="(min-width: 1024px) 40vw, 100vw"
