@@ -85,11 +85,14 @@
       "overviewTitle": "Program overview",
       "curriculumTitle": "What you'll study",
       "careerTitle": "Career outlook",
-      "feesTitle": "Tuition & fees",
-      "annualTuition": "Annual tuition",
-      "registrationFee": "Registration fee",
-      "firstYearTotal": "First-year total",
-      "feesNote": "Fees are payable in installments. Merit scholarships are available for qualifying applicants.",
+      "feesTitle": "HND tuition (3 years)",
+      "feesSubtitle": "Fee breakdown for each level of the Higher National Diploma.",
+      "level1Label": "Year 1 (Level One)",
+      "level2Label": "Year 2 (Level Two)",
+      "level3Label": "Year 3 (Level Three)",
+      "threeYearTotal": "3-year total",
+      "feesNote": "Fees are payable in installments. Merit scholarships are available for qualifying applicants. See the Tuition page for the full breakdown.",
+      "viewFullBreakdown": "View full fee breakdown",
       "documentsTitle": "Documents required to apply",
       "applyNow": "Apply for this program",
       "applyCtaBody": "Ready to take the next step? Submit your application and join the next cohort of UBHI healthcare professionals.",
@@ -100,13 +103,11 @@
       "heroIntakeValue": "September & February"
     },
     "documents": [
-      "GCE Advanced Level certificate (or recognized equivalent)",
-      "Official academic transcripts from previous schools",
-      "Certified copy of birth certificate",
-      "Valid national ID card or passport",
-      "Four recent passport-sized photographs",
-      "Completed UBHI application form",
-      "Receipt of application and registration fee payment"
+      "Advanced Level or Baccalauréat certificate",
+      "National Identity Card",
+      "Birth Certificate",
+      "2 passport-size photos",
+      "2 reams of paper"
     ],
     "items": {
       "nursing": {
@@ -347,22 +348,82 @@
     "deadlineOrientDate": "First week of each semester",
     "deadlineStart": "Classes Begin",
     "deadlineStartDate": "September & February intakes",
-    "requirementsTitle": "Entry Requirements",
-    "req1": "GCE Advanced Level (or equivalent) certificate.",
-    "req2": "Minimum performance in science subjects for health programs.",
-    "req3": "Valid national ID or passport.",
-    "req4": "Birth certificate and recent passport photographs.",
+    "requirementsTitle": "Requirements for Registration",
+    "requirementsSubtitle": "Three admission tracks — pick the one that matches your background.",
+    "tracks": {
+      "hnd": {
+        "title": "HND",
+        "duration": "3 years",
+        "tagline": "Higher National Diploma — our flagship 3-year healthcare track.",
+        "docs": [
+          "Advanced Level or Baccalauréat certificate",
+          "National Identity Card",
+          "Birth Certificate",
+          "2 passport-size photos",
+          "2 reams of paper"
+        ]
+      },
+      "bachelor": {
+        "title": "Bachelor (BSc)",
+        "duration": "1 year",
+        "tagline": "One-year top-up to a Bachelor's degree, for HND graduates.",
+        "docs": [
+          "HND Diploma or Attestation",
+          "National Identity Card",
+          "Birth Certificate",
+          "2 passport-size photos",
+          "2 reams of paper"
+        ]
+      },
+      "vocational": {
+        "title": "Vocational",
+        "duration": "1 year",
+        "tagline": "Short, practical courses for fast entry into healthcare practice.",
+        "docs": [
+          "Ordinary Level certificate",
+          "National Identity Card",
+          "Birth Certificate",
+          "2 passport-size photos",
+          "2 reams of paper"
+        ]
+      }
+    },
     "downloadForm": "Download the Application Form"
   },
   "tuition": {
-    "title": "Tuition & Fees",
+    "title": "School Tuition & Fees Structure",
     "eyebrow": "Investment in Your Future",
     "intro": "Our tuition fees are structured to suit different programs while maintaining high academic standards. We also provide flexible payment plans, allowing students and parents to pay fees in installments rather than a single lump sum — so financial constraints do not prevent qualified students from pursuing their education.",
-    "feeTableTitle": "Annual Tuition by Program",
-    "programCol": "Program",
-    "tuitionCol": "Annual Tuition",
-    "registrationCol": "Registration",
-    "totalCol": "First-Year Total",
+    "tracks": {
+      "hndTitle": "HND Programs Tuition",
+      "hndSubtitle": "Three-year Higher National Diploma. Fees are broken down by level below.",
+      "level1": "Level One",
+      "level2": "Level Two",
+      "level3": "Level Three",
+      "hndTotalLabel": "Total over 3 years",
+      "bachelorTitle": "Bachelor's Degree",
+      "bachelorSubtitle": "One-year top-up after HND. Two clean line items.",
+      "vocationalTitle": "Vocational (Short Courses)",
+      "vocationalSubtitle": "One-year practical track designed for fast workforce entry.",
+      "totalLabel": "Total",
+      "amountColumn": "Amount (FCFA)",
+      "descriptionColumn": "Description"
+    },
+    "lines": {
+      "registration": "Registration",
+      "medicalCertificate": "Medical certificate",
+      "yearlyTuition": "Yearly tuition",
+      "internshipToHospitals": "Internship to Hospitals",
+      "practical": "Practical",
+      "practicals": "Practicals",
+      "reportPresentation": "Report presentation",
+      "schoolTshirt": "School T-shirt",
+      "schoolIdentityCard": "School identity card",
+      "internshipSupervision": "Internship supervision",
+      "researchSupervisorAndDefense": "Research supervisor and defense",
+      "tuitionFees": "Tuition fees (course fee)",
+      "researchAndSupervisionDefense": "Research and supervision defense"
+    },
     "scholarshipTitle": "Scholarship Opportunities",
     "scholarshipBody": "Unique Bilingual Higher Institute is committed to recognizing and rewarding academic excellence. In line with this commitment, the institution offers merit-based scholarship opportunities to outstanding and deserving candidates. Students who obtain a minimum of 15 points in their Advanced Level results are eligible to apply. These scholarships are designed to support high-achieving students and promote continued academic success.",
     "scholarshipCriteriaTitle": "Scholarship Criteria",

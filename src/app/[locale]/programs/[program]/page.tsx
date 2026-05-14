@@ -7,9 +7,10 @@ import { Reveal, StaggerGroup, StaggerItem } from '@/components/site/Reveal'
 import { isLocale, locales, type Locale } from '@/i18n/config'
 import { getDictionary } from '@/i18n/getDictionary'
 import {
-  formatXAF,
+  formatFCFA,
+  hndLevels,
+  hndProgramTotal,
   isProgramKey,
-  programFees,
   programImages,
   programOrder,
   type ProgramKey
@@ -51,9 +52,12 @@ export default async function ProgramDetailPage({
   const labels = dict.programs.labels
   const documents = dict.programs.documents
   const p = dict.programs.items[programKey]
-  const fees = programFees[programKey]
-  const total = fees.tuition + fees.registration
   const related = programOrder.filter((k) => k !== programKey).slice(0, 3)
+  const feeRows = [
+    { label: labels.level1Label, value: hndLevels.level1.total },
+    { label: labels.level2Label, value: hndLevels.level2.total },
+    { label: labels.level3Label, value: hndLevels.level3.total }
+  ]
 
   return (
     <>
@@ -178,31 +182,39 @@ export default async function ProgramDetailPage({
                     {labels.feesTitle}
                   </h3>
                 </div>
+                <p className="mt-2 text-xs leading-relaxed text-navy-500 dark:text-navy-300">
+                  {labels.feesSubtitle}
+                </p>
                 <dl className="mt-5 space-y-3 text-sm">
-                  <div className="flex items-start justify-between gap-4 border-b border-dashed border-navy-100 pb-3 dark:border-navy-700">
-                    <dt className="text-navy-500 dark:text-navy-200">{labels.annualTuition}</dt>
-                    <dd className="font-semibold text-navy-700 dark:text-white">
-                      {formatXAF(fees.tuition)}
-                    </dd>
-                  </div>
-                  <div className="flex items-start justify-between gap-4 border-b border-dashed border-navy-100 pb-3 dark:border-navy-700">
-                    <dt className="text-navy-500 dark:text-navy-200">{labels.registrationFee}</dt>
-                    <dd className="font-semibold text-navy-700 dark:text-white">
-                      {formatXAF(fees.registration)}
-                    </dd>
-                  </div>
+                  {feeRows.map((row) => (
+                    <div
+                      key={row.label}
+                      className="flex items-start justify-between gap-4 border-b border-dashed border-navy-100 pb-3 dark:border-navy-700"
+                    >
+                      <dt className="text-navy-500 dark:text-navy-200">{row.label}</dt>
+                      <dd className="font-semibold text-navy-700 dark:text-white">
+                        {formatFCFA(row.value)}
+                      </dd>
+                    </div>
+                  ))}
                   <div className="flex items-start justify-between gap-4 pt-1">
                     <dt className="font-medium text-navy-700 dark:text-navy-100">
-                      {labels.firstYearTotal}
+                      {labels.threeYearTotal}
                     </dt>
                     <dd className="font-serif text-lg font-bold text-ubhi-green-600">
-                      {formatXAF(total)}
+                      {formatFCFA(hndProgramTotal)}
                     </dd>
                   </div>
                 </dl>
                 <p className="mt-4 text-xs leading-relaxed text-navy-500 dark:text-navy-300">
                   {labels.feesNote}
                 </p>
+                <Link
+                  href={`/${locale}/tuition`}
+                  className="mt-4 inline-flex items-center gap-1 text-xs font-semibold text-ubhi-green-600 transition hover:text-ubhi-green-700"
+                >
+                  {labels.viewFullBreakdown} <ArrowRight size={12} />
+                </Link>
               </div>
             </Reveal>
 

@@ -45,40 +45,115 @@ export const programImages: Record<ProgramKey, string> = {
     'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=80'
 }
 
-export type ProgramFees = {
-  tuition: number
-  registration: number
+// FCFA helpers ----------------------------------------------------------
+
+export function formatFCFA(amount: number): string {
+  return `${amount.toLocaleString('en-US')} FCFA`
 }
 
-export const programFees: Record<ProgramKey, ProgramFees> = {
-  nursing: { tuition: 650_000, registration: 75_000 },
-  midwifery: { tuition: 650_000, registration: 75_000 },
-  physiotherapy: { tuition: 600_000, registration: 75_000 },
-  imaging: { tuition: 700_000, registration: 75_000 },
-  pharmacy: { tuition: 650_000, registration: 75_000 },
-  lab: { tuition: 700_000, registration: 75_000 },
-  dental: { tuition: 650_000, registration: 75_000 },
-  management: { tuition: 550_000, registration: 75_000 },
-  computing: { tuition: 600_000, registration: 75_000 }
+// HND fee structure (3 years, per the official UBHI tuition sheet) -----
+
+export type HndLevelKey = 'level1' | 'level2' | 'level3'
+
+export type HndLevelFees = {
+  registration?: number
+  medicalCertificate?: number
+  yearlyTuition: number
+  internshipToHospitals?: number
+  practical?: number
+  reportPresentation?: number
+  schoolTshirt?: number
+  schoolIdentityCard?: number
+  internshipSupervision?: number
+  researchSupervisorAndDefense?: number
+  total: number
 }
 
-export function formatXAF(amount: number): string {
-  return `XAF ${amount.toLocaleString('en-US')}`
-}
-
-export type FormattedFeeRow = {
-  key: ProgramKey
-  tuition: string
-  reg: string
-  total: string
-}
-
-export const tuitionRows: FormattedFeeRow[] = programOrder.map((key) => {
-  const f = programFees[key]
-  return {
-    key,
-    tuition: formatXAF(f.tuition),
-    reg: formatXAF(f.registration),
-    total: formatXAF(f.tuition + f.registration)
+export const hndLevels: Record<HndLevelKey, HndLevelFees> = {
+  level1: {
+    registration: 10_000,
+    medicalCertificate: 5_000,
+    yearlyTuition: 400_000,
+    internshipToHospitals: 10_000,
+    practical: 10_000,
+    reportPresentation: 10_000,
+    schoolTshirt: 4_000,
+    schoolIdentityCard: 1_000,
+    total: 450_000
+  },
+  level2: {
+    yearlyTuition: 400_000,
+    internshipToHospitals: 20_000,
+    practical: 10_000,
+    reportPresentation: 20_000,
+    schoolTshirt: 4_000,
+    internshipSupervision: 10_000,
+    total: 460_000
+  },
+  level3: {
+    yearlyTuition: 400_000,
+    internshipToHospitals: 10_000,
+    practical: 10_000,
+    reportPresentation: 10_000,
+    schoolTshirt: 4_000,
+    internshipSupervision: 5_000,
+    researchSupervisorAndDefense: 30_000,
+    total: 465_000
   }
-})
+}
+
+export const hndProgramTotal =
+  hndLevels.level1.total + hndLevels.level2.total + hndLevels.level3.total
+
+// Bachelor's top-up (BSc, 1 year after HND) ----------------------------
+
+export const bachelorFees = {
+  registration: 25_000,
+  yearlyTuition: 500_000,
+  total: 525_000
+}
+
+// Vocational (short courses, 1 year) -----------------------------------
+
+export const vocationalFees = {
+  registration: 10_000,
+  tuitionFees: 300_000,
+  internshipToHospitals: 10_000,
+  practicals: 10_000,
+  reportPresentation: 10_000,
+  schoolTshirt: 4_000,
+  schoolIdentityCard: 1_000,
+  researchAndSupervisionDefense: 30_000,
+  total: 375_000
+}
+
+// Ordered fee-line keys for translation lookup -------------------------
+
+export const hndLineOrder: (keyof HndLevelFees)[] = [
+  'registration',
+  'medicalCertificate',
+  'yearlyTuition',
+  'internshipToHospitals',
+  'practical',
+  'reportPresentation',
+  'schoolTshirt',
+  'schoolIdentityCard',
+  'internshipSupervision',
+  'researchSupervisorAndDefense'
+]
+
+export const bachelorLineOrder: (keyof typeof bachelorFees)[] = [
+  'registration',
+  'yearlyTuition'
+]
+
+export const vocationalLineOrder: (keyof typeof vocationalFees)[] = [
+  'registration',
+  'tuitionFees',
+  'internshipToHospitals',
+  'practicals',
+  'reportPresentation',
+  'schoolTshirt',
+  'schoolIdentityCard',
+  'researchAndSupervisionDefense'
+]

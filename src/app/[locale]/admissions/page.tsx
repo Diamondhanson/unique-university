@@ -1,4 +1,4 @@
-import { CalendarDays, CheckCircle2, ClipboardCheck, CreditCard, Download, FileCheck, FileText } from 'lucide-react'
+import { BookOpen, CalendarDays, CheckCircle2, ClipboardCheck, CreditCard, Download, FileCheck, FileText, GraduationCap, Wrench } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -29,7 +29,26 @@ export default async function AdmissionsPage({
     { label: t.deadlineStart, value: t.deadlineStartDate }
   ]
 
-  const requirements = [t.req1, t.req2, t.req3, t.req4]
+  const tracks = [
+    {
+      icon: GraduationCap,
+      data: t.tracks.hnd,
+      accent: 'bg-navy-700 text-white',
+      iconBg: 'bg-white/10 text-ubhi-green-300'
+    },
+    {
+      icon: BookOpen,
+      data: t.tracks.bachelor,
+      accent: 'bg-ubhi-green-700 text-white',
+      iconBg: 'bg-white/10 text-white'
+    },
+    {
+      icon: Wrench,
+      data: t.tracks.vocational,
+      accent: 'bg-gold-500 text-navy-900',
+      iconBg: 'bg-navy-900/10 text-navy-900'
+    }
+  ]
 
   return (
     <>
@@ -84,7 +103,7 @@ export default async function AdmissionsPage({
           <div className="space-y-6">
             <Reveal className="relative aspect-[4/3] w-full overflow-hidden rounded-3xl shadow-xl">
               <Image
-                src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?auto=format&fit=crop&w=1100&q=80"
+                src="/photos/admissions-flyer.jpg"
                 alt={t.title}
                 fill
                 sizes="(min-width: 1024px) 40vw, 100vw"
@@ -112,7 +131,7 @@ export default async function AdmissionsPage({
       </section>
 
       <section className="bg-navy-50/50 py-16 dark:bg-navy-800/30 sm:py-24">
-        <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <Reveal>
             <p className="text-xs uppercase tracking-[0.18em] text-ubhi-green-600">
               {t.requirementsTitle}
@@ -120,22 +139,52 @@ export default async function AdmissionsPage({
             <h2 className="mt-3 font-serif text-3xl font-bold text-navy-700 dark:text-white sm:text-4xl">
               {t.requirementsTitle}
             </h2>
-            <ul className="mt-6 space-y-3">
-              {requirements.map((req) => (
-                <li key={req} className="flex items-start gap-3 text-base text-navy-700 dark:text-navy-100">
-                  <CheckCircle2 size={20} className="mt-0.5 shrink-0 text-ubhi-green-500" />
-                  <span>{req}</span>
-                </li>
-              ))}
-            </ul>
-          </Reveal>
-          <Reveal delay={0.08} className="flex flex-col justify-center rounded-3xl bg-gradient-to-br from-navy-700 to-navy-900 p-8 text-white shadow-xl sm:p-12">
-            <h3 className="font-serif text-2xl font-semibold">
-              {dict.common.getStarted}
-            </h3>
-            <p className="mt-3 text-sm text-navy-100">
-              {dict.home.ctaBody}
+            <p className="mt-3 max-w-2xl text-base text-navy-500 dark:text-navy-200">
+              {t.requirementsSubtitle}
             </p>
+          </Reveal>
+
+          <StaggerGroup className="mt-10 grid gap-6 lg:grid-cols-3">
+            {tracks.map((track) => (
+              <StaggerItem
+                key={track.data.title}
+                className="flex flex-col overflow-hidden rounded-2xl border border-navy-100 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg dark:border-navy-700 dark:bg-navy-800"
+              >
+                <div className={`flex items-center gap-3 px-6 py-5 ${track.accent}`}>
+                  <span className={`inline-flex h-10 w-10 items-center justify-center rounded-xl ${track.iconBg}`}>
+                    <track.icon size={18} />
+                  </span>
+                  <div>
+                    <p className="font-serif text-lg font-semibold">{track.data.title}</p>
+                    <p className="text-xs opacity-80">{track.data.duration}</p>
+                  </div>
+                </div>
+                <div className="flex-1 p-6">
+                  <p className="text-sm leading-relaxed text-navy-500 dark:text-navy-200">
+                    {track.data.tagline}
+                  </p>
+                  <ul className="mt-5 space-y-2.5 text-sm">
+                    {track.data.docs.map((doc) => (
+                      <li
+                        key={doc}
+                        className="flex items-start gap-3 text-navy-700 dark:text-navy-100"
+                      >
+                        <CheckCircle2
+                          size={16}
+                          className="mt-0.5 shrink-0 text-ubhi-green-500"
+                        />
+                        <span>{doc}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </StaggerItem>
+            ))}
+          </StaggerGroup>
+
+          <Reveal delay={0.08} className="mt-10 flex flex-col justify-center rounded-3xl bg-gradient-to-br from-navy-700 to-navy-900 p-8 text-white shadow-xl sm:p-12">
+            <h3 className="font-serif text-2xl font-semibold">{dict.common.getStarted}</h3>
+            <p className="mt-3 max-w-2xl text-sm text-navy-100">{dict.home.ctaBody}</p>
             <div className="mt-6 flex flex-wrap gap-3">
               <Link
                 href={`/${locale}/contact`}

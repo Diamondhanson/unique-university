@@ -5,12 +5,12 @@ import Image from 'next/image'
 import { useEffect, useState } from 'react'
 
 const HERO_IMAGES = [
-  'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1900&q=80',
-  'https://images.unsplash.com/photo-1606761568499-6d2451b23c66?auto=format&fit=crop&w=1900&q=80',
-  'https://images.unsplash.com/photo-1582719471384-894fbb16e074?auto=format&fit=crop&w=1900&q=80',
-  'https://images.unsplash.com/photo-1571260899304-425eee4c7efc?auto=format&fit=crop&w=1900&q=80',
-  'https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1900&q=80',
-  'https://images.unsplash.com/photo-1530497610245-94d3c16cda28?auto=format&fit=crop&w=1900&q=80'
+  '/photos/hero-1-classroom-exam.jpg',
+  '/photos/hero-2-nurses-cohort.jpg',
+  '/photos/hero-3-biochem-lecture.jpg',
+  '/photos/hero-4-public-health-practical.jpg',
+  '/photos/hero-5-injection-practice.jpg',
+  '/photos/hero-6-lab-team.jpg'
 ]
 
 const CYCLE_MS = 6500

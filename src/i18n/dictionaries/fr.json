@@ -85,11 +85,14 @@
       "overviewTitle": "Présentation du programme",
       "curriculumTitle": "Ce que vous étudierez",
       "careerTitle": "Débouchés professionnels",
-      "feesTitle": "Frais de scolarité",
-      "annualTuition": "Frais annuels",
-      "registrationFee": "Frais d'inscription",
-      "firstYearTotal": "Total première année",
-      "feesNote": "Les frais sont payables en plusieurs versements. Des bourses au mérite sont disponibles pour les candidats éligibles.",
+      "feesTitle": "Frais HND (3 ans)",
+      "feesSubtitle": "Détail des frais pour chaque niveau du Diplôme National Supérieur (HND).",
+      "level1Label": "Année 1 (Niveau Un)",
+      "level2Label": "Année 2 (Niveau Deux)",
+      "level3Label": "Année 3 (Niveau Trois)",
+      "threeYearTotal": "Total sur 3 ans",
+      "feesNote": "Les frais sont payables en plusieurs versements. Des bourses au mérite sont disponibles. Voir la page Frais pour le détail complet.",
+      "viewFullBreakdown": "Voir le détail complet",
       "documentsTitle": "Documents requis pour postuler",
       "applyNow": "Postuler à ce programme",
       "applyCtaBody": "Prêt(e) à passer à l'étape suivante ? Soumettez votre candidature et rejoignez la prochaine promotion de professionnels de la santé UBHI.",
@@ -100,13 +103,11 @@
       "heroIntakeValue": "Septembre et février"
     },
     "documents": [
-      "Certificat du GCE Advanced Level (ou équivalent reconnu)",
-      "Relevés de notes officiels des établissements précédents",
-      "Copie certifiée de l'acte de naissance",
-      "Carte nationale d'identité ou passeport en cours de validité",
-      "Quatre photos d'identité récentes",
-      "Formulaire de candidature UBHI dûment rempli",
-      "Reçu de paiement des frais de candidature et d'inscription"
+      "Certificat du Advanced Level ou Baccalauréat",
+      "Carte Nationale d'Identité",
+      "Acte de naissance",
+      "2 photos d'identité",
+      "2 rames de papier"
     ],
     "items": {
       "nursing": {
@@ -348,21 +349,81 @@
     "deadlineStart": "Début des cours",
     "deadlineStartDate": "Rentrées en septembre et en février",
     "requirementsTitle": "Conditions d'admission",
-    "req1": "Certificat du GCE Advanced Level (ou équivalent).",
-    "req2": "Performance minimale en matières scientifiques pour les programmes de santé.",
-    "req3": "Carte nationale d'identité ou passeport valide.",
-    "req4": "Certificat de naissance et photos d'identité récentes.",
+    "requirementsSubtitle": "Trois filières d'admission — choisissez celle qui correspond à votre parcours.",
+    "tracks": {
+      "hnd": {
+        "title": "HND",
+        "duration": "3 ans",
+        "tagline": "Diplôme National Supérieur — notre filière phare en santé sur 3 ans.",
+        "docs": [
+          "Certificat du Advanced Level ou Baccalauréat",
+          "Carte Nationale d'Identité",
+          "Acte de naissance",
+          "2 photos d'identité",
+          "2 rames de papier"
+        ]
+      },
+      "bachelor": {
+        "title": "Licence (BSc)",
+        "duration": "1 an",
+        "tagline": "Top-up d'un an vers la Licence, pour les diplômés HND.",
+        "docs": [
+          "Diplôme HND ou attestation",
+          "Carte Nationale d'Identité",
+          "Acte de naissance",
+          "2 photos d'identité",
+          "2 rames de papier"
+        ]
+      },
+      "vocational": {
+        "title": "Formation Professionnelle",
+        "duration": "1 an",
+        "tagline": "Formations courtes et pratiques pour entrer rapidement dans la profession.",
+        "docs": [
+          "Certificat du Ordinary Level",
+          "Carte Nationale d'Identité",
+          "Acte de naissance",
+          "2 photos d'identité",
+          "2 rames de papier"
+        ]
+      }
+    },
     "downloadForm": "Télécharger le formulaire"
   },
   "tuition": {
-    "title": "Frais de scolarité",
+    "title": "Structure des frais de scolarité",
     "eyebrow": "Un investissement pour l'avenir",
     "intro": "Nos frais de scolarité sont structurés pour s'adapter aux différents programmes tout en maintenant des standards académiques élevés. Nous proposons également des plans de paiement flexibles, permettant aux étudiants et aux parents de régler les frais en plusieurs versements plutôt qu'en une somme unique — afin que les contraintes financières n'empêchent pas les étudiants qualifiés de poursuivre leurs études.",
-    "feeTableTitle": "Frais annuels par programme",
-    "programCol": "Programme",
-    "tuitionCol": "Frais annuels",
-    "registrationCol": "Inscription",
-    "totalCol": "Total première année",
+    "tracks": {
+      "hndTitle": "Frais HND",
+      "hndSubtitle": "Diplôme National Supérieur en 3 ans. Détail des frais par niveau ci-dessous.",
+      "level1": "Niveau Un",
+      "level2": "Niveau Deux",
+      "level3": "Niveau Trois",
+      "hndTotalLabel": "Total sur 3 ans",
+      "bachelorTitle": "Licence (BSc)",
+      "bachelorSubtitle": "Top-up d'un an après le HND. Deux lignes simples.",
+      "vocationalTitle": "Formation professionnelle (cours courts)",
+      "vocationalSubtitle": "Filière pratique d'un an, pensée pour une insertion rapide.",
+      "totalLabel": "Total",
+      "amountColumn": "Montant (FCFA)",
+      "descriptionColumn": "Description"
+    },
+    "lines": {
+      "registration": "Inscription",
+      "medicalCertificate": "Certificat médical",
+      "yearlyTuition": "Frais annuels de scolarité",
+      "internshipToHospitals": "Stages en hôpital",
+      "practical": "Travaux pratiques",
+      "practicals": "Travaux pratiques",
+      "reportPresentation": "Présentation du rapport",
+      "schoolTshirt": "T-shirt de l'école",
+      "schoolIdentityCard": "Carte d'étudiant",
+      "internshipSupervision": "Encadrement de stage",
+      "researchSupervisorAndDefense": "Encadrement de recherche et soutenance",
+      "tuitionFees": "Frais de cours",
+      "researchAndSupervisionDefense": "Recherche et soutenance d'encadrement"
+    },
     "scholarshipTitle": "Bourses d'études",
     "scholarshipBody": "L'Institut Supérieur Bilingue Unique est engagé à reconnaître et récompenser l'excellence académique. Dans cette optique, l'institution offre des bourses au mérite aux candidats remarquables. Les étudiants qui obtiennent au minimum 15 points à leurs résultats du Advanced Level peuvent postuler. Ces bourses soutiennent les étudiants à haut potentiel et encouragent la réussite académique continue.",
     "scholarshipCriteriaTitle": "Critères d'attribution",

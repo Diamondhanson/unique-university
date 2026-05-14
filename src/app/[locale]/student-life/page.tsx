@@ -20,29 +20,25 @@ export default async function StudentLifePage({
       icon: Stethoscope,
       title: t.section1Title,
       body: t.section1Body,
-      image:
-        'https://images.unsplash.com/photo-1538108149393-fbbd81895907?auto=format&fit=crop&w=1100&q=80'
+      image: '/photos/studentlife-clinical-placement.jpg'
     },
     {
       icon: Users,
       title: t.section2Title,
       body: t.section2Body,
-      image:
-        'https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1100&q=80'
+      image: '/photos/studentlife-cohort-uniform.jpg'
     },
     {
       icon: Trophy,
       title: t.section3Title,
       body: t.section3Body,
-      image:
-        'https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=1100&q=80'
+      image: '/photos/studentlife-team-outside.jpg'
     },
     {
       icon: Languages,
       title: t.section4Title,
       body: t.section4Body,
-      image:
-        'https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&w=1100&q=80'
+      image: '/photos/studentlife-classroom-group.jpg'
     }
   ]
 
