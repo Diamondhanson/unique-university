@@ -1,6 +1,7 @@
 import { CheckCircle2, Compass, Heart, ShieldCheck, Target } from 'lucide-react'
 import Image from 'next/image'
 
+import { PageHero } from '@/components/site/PageHero'
 import { Reveal, StaggerGroup, StaggerItem } from '@/components/site/Reveal'
 import { isLocale, type Locale } from '@/i18n/config'
 import { getDictionary } from '@/i18n/getDictionary'
@@ -24,23 +25,10 @@ export default async function AboutPage({
 
   return (
     <>
-      <section className="border-b border-navy-100 bg-gradient-to-b from-navy-50 to-white py-20 dark:border-navy-800 dark:from-navy-800/40 dark:to-navy-900 sm:py-28">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <Reveal>
-            <p className="text-xs uppercase tracking-[0.18em] text-ubhi-green-600">
-              {t.eyebrow}
-            </p>
-          </Reveal>
-          <Reveal delay={0.05}>
-            <h1 className="mt-3 font-serif text-5xl font-bold text-navy-700 dark:text-white sm:text-6xl">
-              {t.title}
-            </h1>
-          </Reveal>
-        </div>
-      </section>
+      <PageHero image="/photos/hero-2-nurses-cohort.jpg" title={t.title} />
 
       <section className="bg-white py-16 dark:bg-navy-900 sm:py-24">
-        <div className="mx-auto grid max-w-7xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
+        <div className="mx-auto grid max-w-7xl items-start gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
           <Reveal className="relative aspect-[4/5] w-full overflow-hidden rounded-3xl shadow-xl">
             <Image
               src="/photos/about-students-classroom.jpg"
@@ -52,7 +40,10 @@ export default async function AboutPage({
           </Reveal>
           <div className="space-y-6">
             <Reveal>
-              <p className="text-base leading-relaxed text-navy-700 dark:text-navy-100">
+              <p className="text-xs uppercase tracking-[0.18em] text-ubhi-green-600">
+                {t.eyebrow}
+              </p>
+              <p className="mt-4 text-base leading-relaxed text-navy-700 dark:text-navy-100">
                 {t.intro}
               </p>
             </Reveal>

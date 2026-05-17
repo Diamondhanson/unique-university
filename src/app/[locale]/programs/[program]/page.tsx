@@ -1,4 +1,4 @@
-import { ArrowLeft, ArrowRight, BookOpen, CalendarDays, CheckCircle2, ClipboardList, Clock, FileText, GraduationCap, Receipt } from 'lucide-react'
+import { ArrowLeft, ArrowRight, BookOpen, CalendarDays, CheckCircle2, Clock, FileText, GraduationCap, Receipt } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
@@ -128,28 +128,6 @@ export default async function ProgramDetailPage({
 
             <Reveal>
               <div className="flex items-center gap-3">
-                <span className="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-navy-500/10 text-navy-700 dark:text-ubhi-green-500">
-                  <ClipboardList size={18} />
-                </span>
-                <h2 className="font-serif text-2xl font-bold text-navy-700 dark:text-white sm:text-3xl">
-                  {labels.curriculumTitle}
-                </h2>
-              </div>
-              <StaggerGroup className="mt-6 grid gap-3 sm:grid-cols-2">
-                {p.curriculum.map((item) => (
-                  <StaggerItem
-                    key={item}
-                    className="flex items-start gap-3 rounded-xl border border-navy-100 bg-white p-4 text-sm dark:border-navy-700 dark:bg-navy-800"
-                  >
-                    <CheckCircle2 size={16} className="mt-0.5 shrink-0 text-ubhi-green-500" />
-                    <span className="text-navy-700 dark:text-navy-100">{item}</span>
-                  </StaggerItem>
-                ))}
-              </StaggerGroup>
-            </Reveal>
-
-            <Reveal>
-              <div className="flex items-center gap-3">
                 <span className="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-gold-400/15 text-gold-600">
                   <GraduationCap size={18} />
                 </span>
@@ -252,7 +230,7 @@ export default async function ProgramDetailPage({
               {dict.common.applyNow}
             </p>
             <h2 className="mt-3 font-serif text-3xl font-bold leading-tight sm:text-4xl">
-              {labels.applyNow} — {p.name}
+              {labels.applyNow}: {p.name}
             </h2>
             <p className="mt-4 max-w-xl text-base text-navy-100">{labels.applyCtaBody}</p>
             <div className="mt-8 flex flex-wrap gap-3">

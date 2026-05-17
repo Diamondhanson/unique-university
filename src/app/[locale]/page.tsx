@@ -1,4 +1,4 @@
-import { ArrowRight, BookOpen, GraduationCap, HeartPulse, Languages, Sparkles } from 'lucide-react'
+import { ArrowRight, BadgeCheck, BookOpen, Building2, GraduationCap, Home, Wallet, Wifi } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -27,10 +27,54 @@ export default async function HomePage({
   ]
 
   const features = [
-    { icon: HeartPulse, title: t.featureOneTitle, body: t.featureOneBody },
-    { icon: Languages, title: t.featureTwoTitle, body: t.featureTwoBody },
-    { icon: GraduationCap, title: t.featureThreeTitle, body: t.featureThreeBody },
-    { icon: Sparkles, title: t.featureFourTitle, body: t.featureFourBody }
+    {
+      icon: Building2,
+      title: t.featureOneTitle,
+      body: t.featureOneBody,
+      gradient: 'from-navy-700 via-navy-800 to-navy-900',
+      accent: 'text-ubhi-green-300',
+      number: '01'
+    },
+    {
+      icon: BadgeCheck,
+      title: t.featureTwoTitle,
+      body: t.featureTwoBody,
+      gradient: 'from-ubhi-green-600 via-ubhi-green-700 to-ubhi-green-800',
+      accent: 'text-gold-300',
+      number: '02'
+    },
+    {
+      icon: Home,
+      title: t.featureThreeTitle,
+      body: t.featureThreeBody,
+      gradient: 'from-gold-500 via-gold-600 to-navy-800',
+      accent: 'text-white',
+      number: '03'
+    },
+    {
+      icon: Wallet,
+      title: t.featureFourTitle,
+      body: t.featureFourBody,
+      gradient: 'from-navy-600 via-navy-700 to-ubhi-green-700',
+      accent: 'text-gold-300',
+      number: '04'
+    },
+    {
+      icon: GraduationCap,
+      title: t.featureFiveTitle,
+      body: t.featureFiveBody,
+      gradient: 'from-ubhi-green-700 via-navy-800 to-navy-900',
+      accent: 'text-gold-300',
+      number: '05'
+    },
+    {
+      icon: Wifi,
+      title: t.featureSixTitle,
+      body: t.featureSixBody,
+      gradient: 'from-navy-800 via-ubhi-green-700 to-ubhi-green-600',
+      accent: 'text-gold-300',
+      number: '06'
+    }
   ]
 
   return (
@@ -39,12 +83,7 @@ export default async function HomePage({
         <HeroCarousel />
         <div className="mx-auto max-w-7xl px-4 py-24 sm:px-6 sm:py-32 lg:px-8 lg:py-40">
           <Reveal>
-            <span className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-3 py-1 text-xs uppercase tracking-[0.18em] text-gold-400">
-              <Sparkles size={12} /> {t.heroEyebrow}
-            </span>
-          </Reveal>
-          <Reveal delay={0.05}>
-            <h1 className="mt-6 max-w-4xl font-serif text-5xl font-bold leading-[1.05] sm:text-6xl lg:text-7xl">
+            <h1 className="max-w-4xl font-serif text-5xl font-bold leading-[1.05] sm:text-6xl lg:text-7xl">
               {t.heroTitle}
             </h1>
           </Reveal>
@@ -105,19 +144,29 @@ export default async function HomePage({
               {t.whySubtitle}
             </p>
           </Reveal>
-          <StaggerGroup className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <StaggerGroup className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {features.map((f) => (
               <StaggerItem
                 key={f.title}
-                className="group relative overflow-hidden rounded-2xl border border-navy-100 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:border-ubhi-green-300 hover:shadow-lg dark:border-navy-700 dark:bg-navy-800"
+                className={`group relative isolate overflow-hidden rounded-3xl bg-gradient-to-br ${f.gradient} p-8 text-white shadow-lg shadow-navy-900/15 ring-1 ring-white/10 transition hover:-translate-y-1 hover:shadow-2xl`}
               >
-                <div className="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-ubhi-green-500/10 text-ubhi-green-600">
-                  <f.icon size={20} />
+                <f.icon
+                  aria-hidden
+                  className="pointer-events-none absolute -right-6 -bottom-6 size-36 text-white/[0.08] transition duration-500 group-hover:scale-110 group-hover:text-white/[0.14]"
+                  strokeWidth={1.5}
+                />
+                <div className="relative flex items-center justify-between">
+                  <span className={`inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-white/10 backdrop-blur ${f.accent}`}>
+                    <f.icon size={22} strokeWidth={2} />
+                  </span>
+                  <span className={`font-serif text-3xl font-bold tracking-tight ${f.accent} opacity-70`}>
+                    {f.number}
+                  </span>
                 </div>
-                <h3 className="mt-4 font-serif text-lg font-semibold text-navy-700 dark:text-white">
+                <h3 className="relative mt-6 font-serif text-xl font-semibold leading-snug">
                   {f.title}
                 </h3>
-                <p className="mt-2 text-sm leading-relaxed text-navy-500 dark:text-navy-200">
+                <p className="relative mt-3 text-sm leading-relaxed text-white/85">
                   {f.body}
                 </p>
               </StaggerItem>

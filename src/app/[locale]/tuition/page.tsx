@@ -1,5 +1,6 @@
 import { Award, BookOpen, CalendarRange, Coins, GraduationCap, Sparkles, Wrench } from 'lucide-react'
 
+import { PageHero } from '@/components/site/PageHero'
 import { Reveal, StaggerGroup, StaggerItem } from '@/components/site/Reveal'
 import { isLocale, type Locale } from '@/i18n/config'
 import { getDictionary } from '@/i18n/getDictionary'
@@ -60,23 +61,12 @@ export default async function TuitionPage({
 
   return (
     <>
-      <section className="border-b border-navy-100 bg-gradient-to-b from-navy-50 to-white py-20 dark:border-navy-800 dark:from-navy-800/40 dark:to-navy-900 sm:py-28">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <Reveal>
-            <p className="text-xs uppercase tracking-[0.18em] text-ubhi-green-600">{t.eyebrow}</p>
-          </Reveal>
-          <Reveal delay={0.05}>
-            <h1 className="mt-3 font-serif text-4xl font-bold text-navy-700 dark:text-white sm:text-5xl lg:text-6xl">
-              {t.title}
-            </h1>
-          </Reveal>
-          <Reveal delay={0.1}>
-            <p className="mt-5 max-w-3xl text-base leading-relaxed text-navy-500 dark:text-navy-200">
-              {t.intro}
-            </p>
-          </Reveal>
-        </div>
-      </section>
+      <PageHero
+        image="/photos/studentlife-classroom-group.jpg"
+        eyebrow={t.eyebrow}
+        title={t.title}
+        subtitle={t.intro}
+      />
 
       <section className="bg-white py-16 dark:bg-navy-900 sm:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
