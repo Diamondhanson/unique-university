@@ -41,6 +41,7 @@ export default async function LocaleLayout({
     <html
       lang={typedLocale}
       suppressHydrationWarning
+      data-scroll-behavior="smooth"
       className={`${inter.variable} ${playfair.variable}`}
     >
       <body className="bg-white text-navy-900 antialiased dark:bg-navy-900 dark:text-navy-50">
