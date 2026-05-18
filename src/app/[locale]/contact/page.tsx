@@ -1,5 +1,6 @@
-import { Clock, Mail, MapPin, Phone, Send } from 'lucide-react'
+import { Clock, Mail, MapPin, Phone } from 'lucide-react'
 
+import { ContactForm } from '@/components/site/ContactForm'
 import { PageHero } from '@/components/site/PageHero'
 import { Reveal } from '@/components/site/Reveal'
 import { isLocale, type Locale } from '@/i18n/config'
@@ -34,68 +35,21 @@ export default async function ContactPage({
       <section className="bg-white py-16 dark:bg-navy-900 sm:py-24">
         <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[1.1fr_1fr] lg:px-8">
           <Reveal>
-            <div className="rounded-3xl border border-navy-100 bg-white p-8 shadow-sm dark:border-navy-700 dark:bg-navy-800 sm:p-10">
-              <h2 className="font-serif text-2xl font-semibold text-navy-700 dark:text-white">
-                {t.formTitle}
-              </h2>
-              <form className="mt-6 grid gap-5" action="#" method="post">
-                <div className="grid gap-4 sm:grid-cols-2">
-                  <label className="block">
-                    <span className="text-sm font-medium text-navy-700 dark:text-navy-100">
-                      {t.nameLabel}
-                    </span>
-                    <input
-                      type="text"
-                      name="name"
-                      required
-                      placeholder={t.namePlaceholder}
-                      className="mt-1.5 w-full rounded-xl border border-navy-200 bg-white px-4 py-2.5 text-sm text-navy-700 outline-none transition focus:border-ubhi-green-500 focus:ring-2 focus:ring-ubhi-green-500/30 dark:border-navy-700 dark:bg-navy-900 dark:text-white"
-                    />
-                  </label>
-                  <label className="block">
-                    <span className="text-sm font-medium text-navy-700 dark:text-navy-100">
-                      {t.emailLabel}
-                    </span>
-                    <input
-                      type="email"
-                      name="email"
-                      required
-                      placeholder={t.emailPlaceholder}
-                      className="mt-1.5 w-full rounded-xl border border-navy-200 bg-white px-4 py-2.5 text-sm text-navy-700 outline-none transition focus:border-ubhi-green-500 focus:ring-2 focus:ring-ubhi-green-500/30 dark:border-navy-700 dark:bg-navy-900 dark:text-white"
-                    />
-                  </label>
-                </div>
-                <label className="block">
-                  <span className="text-sm font-medium text-navy-700 dark:text-navy-100">
-                    {t.subjectLabel}
-                  </span>
-                  <input
-                    type="text"
-                    name="subject"
-                    placeholder={t.subjectPlaceholder}
-                    className="mt-1.5 w-full rounded-xl border border-navy-200 bg-white px-4 py-2.5 text-sm text-navy-700 outline-none transition focus:border-ubhi-green-500 focus:ring-2 focus:ring-ubhi-green-500/30 dark:border-navy-700 dark:bg-navy-900 dark:text-white"
-                  />
-                </label>
-                <label className="block">
-                  <span className="text-sm font-medium text-navy-700 dark:text-navy-100">
-                    {t.messageLabel}
-                  </span>
-                  <textarea
-                    name="message"
-                    required
-                    rows={5}
-                    placeholder={t.messagePlaceholder}
-                    className="mt-1.5 w-full rounded-xl border border-navy-200 bg-white px-4 py-2.5 text-sm text-navy-700 outline-none transition focus:border-ubhi-green-500 focus:ring-2 focus:ring-ubhi-green-500/30 dark:border-navy-700 dark:bg-navy-900 dark:text-white"
-                  />
-                </label>
-                <button
-                  type="submit"
-                  className="inline-flex items-center justify-center gap-2 rounded-full bg-ubhi-green-500 px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-ubhi-green-600 sm:w-fit"
-                >
-                  {t.submit} <Send size={14} />
-                </button>
-              </form>
-            </div>
+            <ContactForm
+              labels={{
+                formTitle: t.formTitle,
+                nameLabel: t.nameLabel,
+                namePlaceholder: t.namePlaceholder,
+                emailLabel: t.emailLabel,
+                emailPlaceholder: t.emailPlaceholder,
+                subjectLabel: t.subjectLabel,
+                subjectPlaceholder: t.subjectPlaceholder,
+                messageLabel: t.messageLabel,
+                messagePlaceholder: t.messagePlaceholder,
+                submit: t.submit,
+                sending: t.sending
+              }}
+            />
           </Reveal>
 
           <Reveal delay={0.08}>
