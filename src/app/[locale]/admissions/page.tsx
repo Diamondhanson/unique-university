@@ -1,4 +1,4 @@
-import { BookOpen, CalendarDays, CheckCircle2, ClipboardCheck, CreditCard, Download, FileCheck, FileText, GraduationCap, Wrench } from 'lucide-react'
+import { BookOpen, CalendarDays, CheckCircle2, ClipboardCheck, CreditCard, FileCheck, FileText, GraduationCap, Wrench } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -180,12 +180,6 @@ export default async function AdmissionsPage({
               >
                 {dict.common.contactUs}
               </Link>
-              <a
-                href="#"
-                className="inline-flex items-center gap-2 rounded-full border border-white/30 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-white/10"
-              >
-                <Download size={14} /> {t.downloadForm}
-              </a>
             </div>
           </Reveal>
         </div>

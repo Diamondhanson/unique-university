@@ -23,9 +23,9 @@
     "quickLinks": "Liens rapides",
     "contact": "Contact",
     "follow": "Suivez-nous",
-    "address": "Yaoundé, Cameroun",
+    "address": "Douala, Cameroun",
     "phone": "+237 676 621 850 / +237 650 202 741",
-    "email": "info@unique-bilingual.com"
+    "email": "uschool242@gmail.com"
   },
   "home": {
     "heroEyebrow": "",
@@ -477,12 +477,12 @@
     "sending": "Envoi...",
     "infoTitle": "Joignez-nous directement",
     "addressLabel": "Campus",
-    "addressValue": "Yaoundé, Cameroun",
+    "addressValue": "Douala, Cameroun",
     "phoneLabel": "Téléphone",
     "phoneValue": "+237 676 621 850 / +237 650 202 741",
     "emailLabelInfo": "Email",
-    "emailValue": "info@unique-bilingual.com",
+    "emailValue": "uschool242@gmail.com",
     "hoursLabel": "Heures d'ouverture",
-    "hoursValue": "Lun–Ven · 8h00 – 17h00"
+    "hoursValue": "Lun-Sam"
   }
 }

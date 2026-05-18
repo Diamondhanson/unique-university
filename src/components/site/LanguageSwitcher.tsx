@@ -1,6 +1,5 @@
 'use client'
 
-import { Globe } from 'lucide-react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
@@ -18,7 +17,6 @@ export function LanguageSwitcher({ currentLocale }: { currentLocale: Locale }) {
 
   return (
     <div className="inline-flex items-center gap-1 rounded-full border border-navy-200 bg-white/70 p-1 text-sm font-medium text-navy-700 backdrop-blur dark:border-navy-700 dark:bg-navy-800/60 dark:text-navy-100">
-      <Globe size={14} className="ml-2 text-navy-500 dark:text-navy-200" aria-hidden />
       {locales.map((locale) => {
         const active = locale === currentLocale
         return (
