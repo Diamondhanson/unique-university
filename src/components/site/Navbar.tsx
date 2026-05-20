@@ -26,7 +26,7 @@ export function Navbar({ locale, dict }: NavbarProps) {
     { href: `/${locale}/programs`, label: dict.nav.programs },
     { href: `/${locale}/admissions`, label: dict.nav.admissions },
     { href: `/${locale}/tuition`, label: dict.nav.tuition },
-    // { href: `/${locale}/student-life`, label: dict.nav.studentLife }, // hidden until content is ready
+    { href: `/${locale}/campus-life`, label: dict.nav.campusLife },
     { href: `/${locale}/contact`, label: dict.nav.contact }
   ]
 

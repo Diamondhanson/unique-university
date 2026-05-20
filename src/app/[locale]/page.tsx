@@ -233,7 +233,7 @@ export default async function HomePage({
         </div>
       </section>
 
-      <section className="bg-white py-20 dark:bg-navy-900 sm:py-24">
+      <section className="bg-navy-50/50 py-20 dark:bg-navy-800/30 sm:py-24">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
           <Reveal className="overflow-hidden rounded-3xl bg-gradient-to-br from-navy-700 to-navy-900 px-8 py-14 text-white shadow-2xl sm:px-14 sm:py-20">
             <p className="text-xs uppercase tracking-[0.18em] text-gold-400">

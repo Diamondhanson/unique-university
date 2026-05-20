@@ -37,7 +37,7 @@ export function buildContactEmailHtml(s: Submission): string {
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>New contact message — UBHI</title>
+    <title>New contact message - UBHI</title>
   </head>
   <body style="margin:0;padding:0;background-color:#f4f6fb;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Helvetica,Arial,sans-serif;color:${ink};">
     <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background-color:#f4f6fb;padding:32px 16px;">
@@ -100,7 +100,7 @@ export function buildContactEmailHtml(s: Submission): string {
 
 export function buildContactEmailText(s: Submission): string {
   return [
-    'New contact form submission — UBHI',
+    'New contact form submission - UBHI',
     '----------------------------------',
     '',
     `From:    ${s.name} <${s.email}>`,
